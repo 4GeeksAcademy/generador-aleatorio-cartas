@@ -1,5 +1,26 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#cartaPrincipal{
+    height: 500px;
+    width: 350px;
+    border-radius: 5%;
+}
+#firts_Icon{
+    color: black;
+    font-size: 90px;
+    padding-left: 15px;
+}
+#Second_Icon{
+    color: black;
+    font-size: 90px;
+    padding-right: 15px;
+    transform: rotate(180deg);
+}
+#number{
+    font-size: 160px;
 }

@@ -7,5 +7,44 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  console.log("Generador de Cartas Aleatorios ");
+
+
+const cartasPalos = ["♦","♥", "♠", "♣"];
+const valoresDeCarta = ["A",2,3,4,5,6,7,8,9,"K","Q","J"];
+
+function signoRamdon (lista){
+let elementoAleatorio = Math.floor(Math.random() * lista.length);
+return lista[elementoAleatorio]
+}
+const firts_Icon = document.querySelector("#firts_Icon");
+const paloAleatorio = signoRamdon(cartasPalos);
+firts_Icon.textContent = paloAleatorio;
+
+const second_Icon = document.querySelector("#Second_Icon");
+second_Icon.textContent = paloAleatorio;
+
+const number = document.querySelector("#number");
+const numberAleatorio = signoRamdon(valoresDeCarta);
+number.textContent = numberAleatorio;
+
+if (paloAleatorio == "♦" || paloAleatorio == "♥"){
+  firts_Icon.style.color = "red"
+  second_Icon.style.color = "red"
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
