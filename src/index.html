@@ -1,46 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body class="d-flex justify-content-center align-items-center">
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-      <div class="card text-center d-flex" id="cartaPrincipal">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--Contenedor Principal de la carta -->
+  <div class="container-fluid d-flex justify-content-center py-5">
+    <div class="row justify-content-center align-items-start">
+      <div class=" col-10 card text-center d-flex" id="cartaPrincipal">
         <div class="d-flex justify-content-start align-items-start">
-          <spam id="firts_Icon">
+          <span id="firts_Icon">
             ♣
-          </spam>
+          </span>
         </div>
         <div class=" d-flex justify-content-center align-items-center">
-          <spam id="number">
+          <span id="number">
             A
-          </spam>
+          </span>
         </div>
         <div class="d-flex justify-content-end align-items-end">
-          <spam id="Second_Icon">
+          <span id="Second_Icon">
             ♣
-          </spam>
+          </span>
         </div>
-      
       </div>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <!--Generador de la carta-->
+      <div class="col-2 d-flex d-flex justify-content-end ms-5" id="generador-de-cartas">
+        <div class="card">
+          <div class="card-header">
+            <span>
+              GENERADOR DE CARTAS
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="input-group flex-nowrap">
+              <input type="text" id="Tamaño-Cartas" class="form-control" placeholder="Card Height"
+              aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap mt-3">
+              <input type="text" id="Tamaño-Cartas" class="form-control" placeholder="Card Width"
+              aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap mt-3">
+              <input type="text" id="Tamaño-iconos" class="form-control" placeholder="Card Elements"
+              aria-describedby="addon-wrapping">
+            </div>
+            <button type="button" id="Boton-Principal" class="btn btn-primary mt-3">
+              Generador
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  </div>
+  <div class="fixed-bottom p-4">
+    Made with ❤️ by
+    <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  </div>
+  </div>
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
