@@ -34,7 +34,7 @@ if (paloAleatorio == "♦" || paloAleatorio == "♥"){
   firts_Icon.style.color = "red"
   second_Icon.style.color = "red"
 }
-
+//Input funcion
 function cambioDeTamañoCard () {
   const valorDeIngreso = document.querySelector("#Tamaño-Cartas").value
   if(
@@ -56,10 +56,10 @@ function cambioDeTamañoIconos () {
     alert("El valor necesita terminar en px para ser valido. Vuelve a intentar")
   };
 }
+//Boton Funcion
 const botonPrincipal = document.querySelector("#Boton-Principal");
 botonPrincipal.addEventListener("click",cambioDeTamañoCard);
 botonPrincipal.addEventListener("click", cambioDeTamañoIconos);
-
 }
 
 
